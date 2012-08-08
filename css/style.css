@@ -92,15 +92,6 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
   color: #cc3333;
 }
 
-#tweet-bubble{
-  position: absolute;
-  background: white;
-  padding: 20px;
-  border-radius: 6px;
-  width: 300px;
-  z-index: 5;
-}
-
 #logo {
   margin-top: 8px;
   margin-bottom: 20px;
@@ -112,12 +103,12 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
 
 #headshots {
   margin-bottom: 0px;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
 }
 
 #headshots img{
-  margin-top: 100px;
+  margin-top: 50px;
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -125,7 +116,7 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
 }
 
 #headshots img:hover{
-  margin-top: -10px;
+  margin-top: -50px;
 }
 
 #popover {
@@ -139,16 +130,18 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
   opacity: 0.9;
 }
 
-#popover p {
-  text-align: justify;
+#popover li {
+  display: inline-block;
 }
 
-#popover .arrow-down{
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #f00;
+#popover ul {
+  margin: 0;
+  padding: 0;
+}
+
+#popover img {
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .pull-left{

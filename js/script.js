@@ -8,13 +8,21 @@ $(document).ready(function(){
     var popover = $("#popover");
     popover.css({
       left: pos.left - 120,
-      top: pos.top - 120
+      top: pos.top - 100
     });
+
+    $("#popover").tweet({
+      join_text: "auto",
+      username: $(this).data('twitter-handle'),
+      avatar_size: 48,
+      count: 1,
+      loading_text: "loading tweets..."
+    });
+    
     popover.fadeIn('slow')
   },function(){
     $("#popover").hide();
   });
-
 });
 
 
