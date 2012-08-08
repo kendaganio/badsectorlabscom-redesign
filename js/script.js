@@ -8,7 +8,7 @@ $(document).ready(function(){
     var popover = $("#popover");
     popover.css({
       left: pos.left - 120,
-      top: pos.top - 100
+      top: pos.top - 120
     });
 
     $("#popover").tweet({
