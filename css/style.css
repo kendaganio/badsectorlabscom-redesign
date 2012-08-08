@@ -138,6 +138,10 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
   display: none;
 }
 
+span.tweet_time > a {
+  color: red;
+}
+
 .popover:before {
     content: ' ';
     position: absolute;
