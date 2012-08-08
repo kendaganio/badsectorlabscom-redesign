@@ -9,7 +9,8 @@ $(document).ready(function(){
       join_text: "auto",
       username: user,
       count: 1,
-      loading_text: "loading tweets..."
+      loading_text: "loading tweets...",
+      refresh_interval: 300
     });
   })
 
