@@ -3,25 +3,29 @@
 */
 $(document).ready(function(){
 
-  $("#headshots img").hover(function(){
-    var pos = $(this).position();
-    var popover = $("#popover");
-    popover.css({
-      left: pos.left - 120,
-      top: pos.top - 120
-    });
-
-    $("#popover").tweet({
+  $("#headshots img").each(function(){
+    var user = $(this).data('twitter-handle');
+    $("#" + user + "-tweet").tweet({
       join_text: "auto",
-      username: $(this).data('twitter-handle'),
-      avatar_size: 48,
+      username: user,
       count: 1,
       loading_text: "loading tweets..."
     });
-    
+  })
+
+  $("#headshots img").hover(function(){
+    var pos = $(this).position();
+    var el = "#" + $(this).data('twitter-handle') + "-tweet";
+    var popover = $(el);
+
+    popover.css({
+      left: pos.left - 100,
+      top: pos.top - 160
+    });
+
     popover.fadeIn('slow')
   },function(){
-    $("#popover").hide();
+    $(".popover").hide();
   });
 });
 

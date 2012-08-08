@@ -52,14 +52,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 /* Shared Styles */
-/* 
+/*
 Official BSL colors
  blue: #339999;
  red: #cc3333;
 */
 .container { width: 960px; margin: 0 auto; }
 
-body { 
+body {
   background: url('../img/light_noise_diagonal.png');
 }
 
@@ -69,7 +69,7 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
   background: #9fd1d1;
   position: relative;
   border-top: 5px solid #339999;
-}  
+}
 
 #index-header nav{
   background: #292529;
@@ -119,29 +119,59 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
   margin-top: -50px;
 }
 
-#popover {
+.popover {
   position: absolute;
   width: 350px;
-  background: white;
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid black;
-  display: none;
+  height: 100px;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #666;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  -moz-box-shadow: 2px 2px 2px #888;
+  box-shadow: 2px 2px 2px #888;
   opacity: 0.9;
+  font-size: 14px;
+  vertical-align: center;
+  display: none;
 }
 
-#popover li {
+.popover:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 200px;
+    top: 100px;
+    border: 20px solid;
+    border-color: #666 transparent transparent #666;
+}
+
+.popover:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 204px;
+    top: 100px;
+    border: 15px solid;
+    border-color: #fff transparent transparent #fff;
+}
+
+
+.popover li {
   display: inline-block;
 }
 
-#popover ul {
-  margin: 0;
-  padding: 0;
+.popover ul {
+  margin: 0px;
+  padding: 10px 20px 20px 20px;
 }
 
-#popover img {
-  margin-right: 5px;
-  margin-bottom: 5px;
+.popover p {
+  line-height: 18px;
 }
 
 .pull-left{
@@ -169,13 +199,13 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 @media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } 
+  thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
   @page { margin: 0.5cm; }

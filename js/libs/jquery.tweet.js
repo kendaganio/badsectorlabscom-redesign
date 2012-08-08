@@ -182,7 +182,7 @@
       o.retweet = typeof(item.retweeted_status) != 'undefined';
 
       o.tweet_time = parse_date(item.created_at);
-      o.join_text = s.join_text == "auto" ? build_auto_join_text(item.text) : s.join_text;
+      o.join_text = null //s.join_text == "auto" ? build_auto_join_text(item.text) : s.join_text;
       o.tweet_id = item.id_str;
       o.twitter_base = "http://"+s.twitter_url+"/";
       o.user_url = o.twitter_base+o.screen_name;
