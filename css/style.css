@@ -140,7 +140,7 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
 }
 
 span.tweet_time > a {
-  color: red;
+  color: #cc3333;
 }
 
 .popover:before {
