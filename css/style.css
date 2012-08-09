@@ -61,6 +61,7 @@ Official BSL colors
 
 body {
   background: url('../img/light_noise_diagonal.png');
+  font: 400 16px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
 }
 
 h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-height: 50px; letter-spacing: -2px; margin: 0;}
@@ -191,6 +192,11 @@ span.tweet_time > a {
   width: 60%;
   margin: 10px auto;
 }
+
+#head-copy{
+  font-size: 18px;
+}
+
 
 .center { text-align: center; }
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
