@@ -123,16 +123,14 @@ h1 { font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-size: 50px; line-
 .popover {
   position: absolute;
   width: 350px;
-  height: 100px;
   text-align: center;
   background-color: #fff;
-  border: 5px solid #666;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  -webkit-box-shadow: 2px 2px 2px #888;
-  -moz-box-shadow: 2px 2px 2px #888;
-  box-shadow: 2px 2px 2px #888;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px #888;
+  -moz-box-shadow: 3px 3px 3px #888;
+  box-shadow: 3px 3px 3px #888;
   opacity: 0.9;
   font-size: 14px;
   vertical-align: center;
@@ -143,26 +141,14 @@ span.tweet_time > a {
   color: #cc3333;
 }
 
-.popover:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 200px;
-    top: 100px;
-    border: 20px solid;
-    border-color: #666 transparent transparent #666;
-}
-
 .popover:after {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: 204px;
-    top: 100px;
-    border: 15px solid;
-    border-color: #fff transparent transparent #fff;
+    left: 164px;
+    border: 18px solid;
+    border-color: #fff transparent transparent transparent;
 }
 
 
@@ -194,7 +180,7 @@ span.tweet_time > a {
 }
 
 #head-copy{
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 

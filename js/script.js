@@ -20,8 +20,8 @@ $(document).ready(function(){
     var popover = $(el);
 
     popover.css({
-      left: pos.left - 100,
-      top: pos.top - 160
+      left: pos.left - 110,
+      top: pos.top - parseInt(popover.css('height')) - 20
     });
 
     popover.fadeIn('slow')
