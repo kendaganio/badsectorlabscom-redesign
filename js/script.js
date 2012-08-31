@@ -3,6 +3,7 @@
 */
 $(document).ready(function(){
 
+  $(document).tooltips();
   var msie6 = $.browser == 'msie' && $.browser.version < 7;
   if (!msie6) {
     var top = $('#navigation ul').offset().top - parseFloat($('#navigation').css('margin-top').replace(/auto/, 0));
