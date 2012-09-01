@@ -8,7 +8,7 @@ $(document).ready(function(){
   if (!msie6) {
     var top = $('#navigation ul').offset().top - parseFloat($('#navigation').css('margin-top').replace(/auto/, 0));
     $(window).scroll(function(event) {
-      var y = $(this).scrollTop() - 60;
+      var y = $(this).scrollTop() - 75;
       if (y >= top) {
         $('#navigation').addClass('fixed');
       }else {
@@ -23,7 +23,8 @@ $(document).ready(function(){
 
   $("#navigation a").click(function(e){
     e.preventDefault();
-    $('html, body').animate({scrollTop: $("" + $(this).attr('href')).offset().top}, 1000);
+    var isFixed = $("#navigation").hasClass("fixed");
+    $('html, body').animate({scrollTop: $("" + $(this).attr('href')).offset().top - (isFixed? 0: 51)}, 1000);
   });
   
   // $("#headshots img").each(function(){
